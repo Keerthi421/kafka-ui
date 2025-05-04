@@ -91,7 +91,12 @@ const Metrics: React.FC = () => {
   }
 
   if (!data.result) {
-    return null;
+    return (
+      <S.EmptyState>
+        <span role="img" aria-label="empty">📭</span>
+        <div>This topic is empty.<br/>No messages or statistics to display yet.</div>
+      </S.EmptyState>
+    );
   }
 
   const totalStats = data.result.totalStats || {};

@@ -53,3 +53,17 @@ export const ProgressPct = styled.span`
 export const LabelValue = styled.span`
   color: ${({ theme }) => theme.statistics.createdAtColor};
 `;
+
+export const EmptyState = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: ${({ theme }) => theme.textColorSecondary || '#888'};
+  font-size: 1.1rem;
+  background: ${({ theme }) => theme.code.backgroundColor};
+  border-radius: 8px;
+  text-align: center;
+  gap: 1rem;
+`;
